@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bus seating</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b2e9f54065.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="tailwind.config.js">
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <script>
+                tailwind.config = {
+                        theme: {
+                                extend: {
+                                        colors: {
+                                                clifford: '#da373d',
+                                                bgcolor: '#F7F8F8',
+                                                granclr: '#1DD100',
+                                        }
+                                }
+                        }
+                }
+        </script>
+</head>
+
+<body class="bg-bgcolor">
+        <header>
+                <section class="container mx-auto">
+                        <div class="navbar bg-base-100">
+                                <div class="navbar-start">
+                                        <div class="dropdown">
+                                                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                                                        </svg>
+                                                </div>
+                                                <ul tabindex="0"
+                                                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                                        <li><a>Item 1</a></li>
+                                                        <li><a>Item 1</a></li>
+                                                        <li><a>Item 1</a></li>
+
+
+                                                </ul>
+                                        </div>
+                                        <a class="btn btn-ghost text-2xl font-bold">P-Ticket</a>
+                                </div>
+                                <div class="navbar-center hidden lg:flex">
+                                        <ul class="menu menu-horizontal px-1">
+                                                <li class="font-semibold"><a>Home </a></li>
+                                                <li class="font-semibold"><a>About</a></li>
+                                                <li class="font-semibold"><a>Destination</a></li>
+                                                <li class="font-semibold"><a>Switch</a></li>
+                                        </ul>
+                                </div>
+                                <div class="navbar-end">
+                                        <a href=""><button class="btn btn-outline btn-success">Bus <i
+                                                                class="fa-solid fa-bus"></i> </button></a>
+                                </div>
+                        </div>
+                </section>
+        </header>
+        <main>
+                <section class="container mx-auto mt-5">
+                        <div>
+                                <img class="w-full" src="imgs/banner.png" alt="">
+                        </div>
+                </section>
+                <h1 class="lg:text-6xl text-3xl my-10 text-center font-semibold">Best Offers For You</h1>
+                <section class="container mx-auto mt-10">
+                        <div class="lg:flex lg:grid-cols-2 gap-4  mb-10">
+                                <div class="border-0  flex justify-between  bg-amber-400 lg:w-6/12  rounded-2xl">
+                                        <div class="flex flex-col justify-center p-5">
+                                                <h1 class="lg:text-6xl text-2xl font-semibold my-3 ">New 15% OFF</h1>
+                                                <h3 class="lg:text-2xl text-xl font-semibold my-3">on your next purchase
+                                                </h3>
+                                                <p class="font-semibold my-3">use by january 2024</p>
+                                        </div>
+                                        <img class="max-w-full h-auto p-0" src="imgs/info-devider.png" alt="">
+                                        <div class="flex flex-col justify-center p-5">
+                                                <h1 class="lg:text-6xl text-2xl font-semibold my-3">NEW 15</h1>
+                                                <h3 class="font-semibold my-3">Coupon code</h3>
+                                        </div>
+                                </div>
+                                <div class="border-2  flex justify-between  bg-rose-500 lg:w-6/12 rounded-2xl ">
+                                        <div class="flex flex-col justify-center p-5">
+                                                <h1 class="lg:text-6xl text-2xl font-semibold my-3">20% OFF</h1>
+                                                <h3 class="text-2xl font-semibold my-3">on your next purchase</h3>
+                                                <p class="font-semibold">use by january 2024</p>
+                                        </div>
+                                        <img class="lg:max-w-full lg:h-auto p-0  " src="imgs/info-devider.png" alt="">
+                                        <div class="flex flex-col justify-center lg:p-5">
+                                                <h1 class="lg:text-6xl text-2xl font-semibold lg:my-3">NEW 15</h1>
+                                                <h3 class="font-semibold my-3 ">Coupon code</h3>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <hr class="mt-52  ">
+                <section class="container mx-auto">
+                        <div class="flex-col justify-center mx-auto w-6/12">
+                                <h1 class="lg:text-6xl text-3xl my-10 mt-52 text-center font-semibold">P.H Paribahan
+                                </h1>
+                                <p class=" text-center ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+                                        labore praesentium, aliquid quaerat cum quas quae rerum laboriosam autem
+                                        doloribus vitae omnis enim eius ea minima dolore repellendus culpa facilis!</p>
+                        </div>
+
+                </section>
+                <section class="container mx-auto bg-white rounded-2xl">
+                        <div class="flex">
+                                <div class=" w-9/12 p-5">
+                                        <div class="flex justify-between my-3">
+                                                <div class="flex">
+                                                        <img src="imgs/bus-logo.png" alt="">
+                                                        <div class="ps-4">
+                                                                <h1 class="text-3xl font-semibold">Greenline Paribahan
+                                                                </h1>
+                                                                <p>Coach-009-WEB ! AC_Business</p>
+                                                        </div>
+                                                </div>
+                                                <div
+                                                        class="border-1 border-lime-500 bg-lime-100 px-3 pt-3 rounded-xl text-lime-600 justify-center">
+                                                        <a class="flex">
+                                                                <img src="imgs/seat-green.png" alt="">
+                                                                <p class="ps-3">40 seats left</p>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                        <div class="border-2 p-5 rounded-xl">
+                                                <div class="flex justify-between my-3">
+                                                        <p class="font-semibold lg:text-2xl">Route</p>
+                                                        <p class="font-semibold">Dhaka-Sylhet</p>
+                                                </div>
+                                                <hr class="border-t-2 border-dotted my-3">
+                                                <div class="flex justify-between my-3">
+                                                        <p class="font-semibold lg:text-2xl">Oportunity</p>
+                                                        <p class="font-semibold">9.00pm</p>
+                                                </div>
+                                                <hr class="border-t-2 border-dotted my-3">
+                                                <div class="flex justify-between">
+                                                        <p class="border-2 px-6 p-3 bg-gray-200 rounded-xl">Boarding
+                                                                point-laximpur</p>
+                                                        <p class="border-2 px-6 p-3 bg-gray-200 rounded-xl">Dropping
+                                                                Point -
+                                                                Bogura</p>
+                                                        <p class="border-2 px-6 p-3 bg-gray-200 rounded-xl">Est. Time -
+                                                                11 Hour
+                                                        </p>
+                                                </div>
+                                        </div>
+                                </div>
+                                <img class="lg:max-w-full lg:h-auto p-0 " src="imgs/info-devider.png" alt="">
+                                <div class="  p-5">
+                                        <div class="flex flex-col  items-center pt-28 ps-10">
+                                                <img class="my-3" src="imgs/fare.png" alt="">
+                                                <p class="text-4xl font-semibold my-2">550 Taka</p>
+                                                <p class=" text-2xl my-2">per person</p>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <section class="container mx-auto">
+                        <div>
+                                <h1 class="text-2xl font-semibold ms-10">Select Your Seat</h1>
+                                <hr class="border-t-4 border-dotted my-3 w-4/12 ms-10">
+                                <div class="flex justify-between w-4/12 ms-10 ">
+                                        <div class="flex">
+                                                <img src="imgs/seat-gray.png" alt="">
+                                                <a href="" class="text-xl font-semibold ps-2">Available</a>
+                                        </div>
+                                        <div class="flex">
+                                                <img src="imgs/seat-green-filled.png" alt="">
+                                                <a href=""
+                                                        class="text-green-500 bg-lime-100 ps-2 text-xl font-semibold">Selected</a>
+                                        </div>
+                                </div>
+                                <hr class="border-t-4 border-dotted my-3 w-4/12 ms-10">
+                                <div class="flex ms-10 ">
+                                        <div>
+
+                                                <p class="border-1 px-2 py-1 text-xl font-semibold my-2 mt-44">A</p>
+                                                <p class="border-1 px-2 py-1 text-xl font-semibold my-2 ">B</p>
+                                                <p class="border-1 px-2 py-1 text-xl font-semibold my-3">C</p>
+                                                <p class="border-1 px-2 py-1 text-xl font-semibold my-3">D</p>
+                                                <p class="border-1 px-2 py-1 text-xl font-semibold my-3">E</p>
+                                                <p class="border-1 px-2 py-1 text-xl font-semibold my-3">F</p>
+                                                <p class="border-1 px-2 py-1 text-xl font-semibold my-3">G</p>
+                                                <p class="border-1 px-2 py-1 text-xl font-semibold my-3">H</p>
+                                                <p class="border-1 px-2 py-1 text-xl font-semibold my-3">I</p>
+                                                <p class="border-1 px-2 py-1 text-xl font-semibold my-3">J</p>
+                                        </div>
+                                        <div class="grid grid-cols-3 gap-8 text-center items-center w-6/12 mb-36">
+                                                <div class="grid grid-cols-2 gap-2 ">
+                                                        <p
+                                                                class=" px-3 py-1  text-xl font-semibold bg-bgcolor rounded-xl">
+                                                        </p>
+                                                        <p
+                                                                class=" px-3 py-1  text-xl font-semibold bg-bgcolor  rounded-xl">
+                                                        </p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                A1</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                A2</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                B1</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                B2</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                C1</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                C2</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                D1</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                D2</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                E1</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                E2</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                F1</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                F2</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                G1</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                G2</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                H1</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                H2</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                I1</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                I2</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                J1</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                J2</p>
+                                                </div>
+                                                <div class="grid grid-cols-2 gap-2">
+                                                        <p
+                                                                class=" px-3 py-1  text-xl font-semibold bg-bgcolor rounded-xl">
+                                                        </p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl ps-9">
+                                                                <img src="imgs/wheel.png " alt="">
+                                                        </p>
+                                                        <p
+                                                                class="border-2 px-3 py-1 pt-1 text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                A3</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                A4</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                B3</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                B4</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                C3</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                C4</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1 pt-1 text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                D3</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                D4</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                E3</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                E4</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                F3</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                F4</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1 pt-1 text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                G3</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                G4</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                H3</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                H4</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                I3</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl">
+                                                                I4</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl mb-10">
+                                                                J3</p>
+                                                        <p
+                                                                class="border-2 px-3 py-1  text-xl font-semibold bg-gray-200 rounded-xl mb-10">
+                                                                J4</p>
+                                                </div>
+                                        </div>
+                                        <div class="w-6/12  p-3 rounded-2xl mb-20 ">
+                                                <h1 class="text-2xl font-semibold">Select Your Seat</h1>
+                                                <hr class="border-t-4 border-dotted my-3 ">
+                                                <div class="mb-20">
+                                                        <div class="grid grid-cols-3 gap-5">
+                                                                <a href="" class=" font-bold">Seat</a>
+                                                                <a href="" class=" font-bold">Class</a>
+                                                                <a href="" class=" font-bold">Price</a>
+                                                        </div>
+                                                        <hr class="border-t-4 border-dotted my-3 ">
+                                                        <div class="grid grid-cols-3 gap-5">
+                                                                <a href="" class=" font-bold text-gray-600">C1</a>
+                                                                <a href="" class=" font-bold text-gray-600">Economy</a>
+                                                                <a href="" class=" font-bold text-gray-600">550 ৳</a>
+                                                                <a href="" class=" font-bold text-gray-600">C2</a>
+                                                                <a href="" class=" font-bold text-gray-600">Economy</a>
+                                                                <a href="" class=" font-bold text-gray-600">550 ৳</a>
+                                                        </div>
+                                                        <hr class="border-t-4  my-3 ">
+                                                        <div class="grid grid-cols-3 gap-5 ">
+                                                                <a href="" class="font-bold">Total Price</a>
+                                                                <a href="" class="font-bold"></a>
+                                                                <a href="" class="font-bold">BDT 1100</a>
+                                                        </div>
+                                                        <div class="flex border-2 p-2 rounded-xl w-10/12 my-3">
+                                                                <input type="text" class="w-full rounded-xl"
+                                                                        placeholder="Have any coupon?">
+                                                                <button
+                                                                        class="btn bg-granclr px-4 font-semibold">Apply</button>
+                                                        </div>
+                                                        <div class="grid grid-cols-3 gap-5 ">
+                                                                <a href="" class="font-bold">Grand Total</a>
+                                                                <a href="" class="font-bold"></a>
+                                                                <a href="" class="font-bold">BDT 1100</a>
+                                                        </div>
+                                                        <div class="my-5">
+                                                                <a href="" class="text-xl font-semibold ">Passengers
+                                                                        Name*</a>
+                                                                <input class="block w-full rounded-xl border-2 p-3"
+                                                                        type="text" placeholder="Enter you name">
+                                                        </div>
+                                                        <div class="my-5">
+                                                                <a href="" class="text-xl font-semibold ">Phone
+                                                                        Number*</a>
+                                                                <input class="block w-full rounded-xl border-2 p-3"
+                                                                        type="text"
+                                                                        placeholder="Enter you Phone Number">
+                                                        </div>
+                                                        <div class="my-5">
+                                                                <a href="" class="text-xl font-semibold ">Email ID*</a>
+                                                                <input class="block w-full rounded-xl border-2 p-3"
+                                                                        type="text" placeholder="Enter you Email">
+                                                        </div>
+                                                        <div>
+                                                                <a
+                                                                        class="btn w-full rounded-2xl font-semibold bg-granclr">NEXT</a>
+                                                        </div>
+                                                        <div class="text-center my-5">
+                                                                <a href="" class="m-2"><u>Terms and Conditions</u></a>
+                                                                <a href="" class="m-2"><u>Cancellation Policy</u></a>
+                                                        </div>
+
+                                                </div>
+
+                                        </div>
+
+
+                </section>
+
+        </main>
+
+        <footer>
+                <section class="container mx-auto  mt-5">
+                        <div class="bg-black text-white">
+                                <div class="flex justify-around   p-5">
+                                        <div>
+                                                <p class="text-2xl font-semibold">P-Ticket</p>
+                                                <p class="w-8/12 font-semibold">P-Ticket is a digital platform to make
+                                                        your
+                                                        daily commuting better.</p>
+                                        </div>
+                                        <div>
+                                                <p class="text-xl font-semibold">Download Our Apps</p>
+                                                <img src="imgs/android.png" alt="">
+                                        </div>
+                                </div>
+                                <p class="border-t-2 border-t-white border-dotted my-8"></p>
+                                <div class="flex justify-around">
+                                        <div>
+                                                <p class="font-semibold">@all rights reserved, P-Ticket services
+                                                        limited.2024
+                                                </p>
+                                        </div>
+                                        <div>
+                                                <a href="" class="m-2"><u>Terms & condition</u></a>
+                                                <a href="" class="m-2"><u>Return & refund policy</u></a>
+                                                <a href="" class="m-2"><u>Privacy policy</u></a>
+                                        </div>
+                                </div>
+
+                        </div>
+
+                </section>
+        </footer>
+
+
+</body>
+
+</html>
